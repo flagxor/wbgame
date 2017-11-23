@@ -34,7 +34,7 @@ def lines():
 def rgb(col):
   return ((col & 0xe) << 9) + ((col & 0xe0) >> 5) + ((col & 0xe00) >> 4)
 
-grass = rgb(0xad9)
+grass = rgb(0x894)
 
 def keys():
   val = pina0.read()
