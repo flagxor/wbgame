@@ -4,7 +4,7 @@ import time
 import urandom
 import wifiboy
 
-WIDTH = 120
+WIDTH = 128
 HEIGHT = 160
 pin0 = machine.Pin(0)
 pin5 = machine.Pin(5)
