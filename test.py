@@ -92,8 +92,11 @@ def player():
       y = HEIGHT - 5
       r = 1 - r
       room(r)
-    wifiboy.box(x - 5, y - 5, 12, 12, grass)
-    wifiboy.box(x - 4, y - 4, 9, 9, rgb(0xfff))
+    wifiboy.box(x - 5, y - 5, 1, 12, grass)
+    wifiboy.box(x - 5, y - 5, 12, 1, grass)
+    wifiboy.box(x - 5, y + 6, 12, 1, grass)
+    wifiboy.box(x + 6, y - 5, 1, 12, grass)
+    wifiboy.box(x - 4, y - 4, 10, 10, rgb(0xfff))
     wifiboy.box(x - 3, y - 3, 4, 4, rgb(0x007))
     wifiboy.box(x + 2, y - 3, 4, 4, rgb(0x007))
     wifiboy.box(x, y + 2, 4, 4, rgb(0xf00))
