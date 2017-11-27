@@ -76,19 +76,27 @@ def player():
       sounds()
       room(r)
     time.sleep(0.02)
-    if x > 115:
+    if x > WIDTH - 5:
       x = 5
       r = 1 - r
       room(r)
     if x < 5:
-      x = 115
+      x = WIDTH - 5
       r = 1 - r
       room(r)
-    wifiboy.box(x - 3, y - 3, 7, 7, grass)
-    wifiboy.box(x - 2, y - 2, 5, 5, rgb(0xfff))
-    wifiboy.box(x - 2, y - 2, 2, 2, rgb(0x007))
-    wifiboy.box(x + 1, y - 2, 2, 2, rgb(0x007))
-    wifiboy.box(x, y + 1, 2, 2, rgb(0xf00))
+    if y > HEIGHT - 5:
+      y = 5
+      r = 1 - r
+      room(r)
+    if y < 5:
+      y = HEIGHT - 5
+      r = 1 - r
+      room(r)
+    wifiboy.box(x - 5, y - 5, 12, 12, grass)
+    wifiboy.box(x - 4, y - 4, 9, 9, rgb(0xfff))
+    wifiboy.box(x - 3, y - 3, 4, 4, rgb(0x007))
+    wifiboy.box(x + 2, y - 3, 4, 4, rgb(0x007))
+    wifiboy.box(x, y + 2, 4, 4, rgb(0xf00))
 
 def sign(x, y):
   wifiboy.box(x - 3, y - 20, 7, 20, rgb(0xc92))
